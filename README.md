@@ -40,7 +40,7 @@ Open your browser and visit:
 
 http://localhost:5173
 
-## Project Structure
+## Project Structure will look like This:
 
 src/
 ├── App.jsx
@@ -50,5 +50,4 @@ src/
 │ └── ToDoItem.jsx
 
 ## Author
-
 Ankita Chakraborty
