@@ -56,11 +56,17 @@ function App() {
 
     <h3>Total Tasks: {tasks.length}</h3>
 
-    <h3>
-      Completed Tasks: {
-        tasks.filter(task => task.completed).length
-      }
-    </h3>
+<h3>
+  Completed Tasks: {
+    tasks.filter(task => task.completed).length
+  }
+</h3>
+
+<h3>
+  Pending Tasks: {
+    tasks.filter(task => !task.completed).length
+  }
+</h3>
 
     <input
       type="text"
