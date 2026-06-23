@@ -68,12 +68,17 @@ function App() {
   }
 </h3>
 
-    <input
-      type="text"
-      placeholder="Enter Task"
-      value={input}
-      onChange={(e) => setInput(e.target.value)}
-    />
+<input
+  type="text"
+  placeholder="Enter Task"
+  value={input}
+  onChange={(e) => setInput(e.target.value)}
+  onKeyDown={(e) => {
+    if (e.key === "Enter") {
+      addTask();
+    }
+  }}
+ />
 
     <button onClick={addTask}>
       Add Task
